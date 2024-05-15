@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <section class="header-about">
+        <!-- create overlay -->
+        <div class="overlay"></div>
+        <!-- create nav -->
+        <nav>
+            <img src="./image/logo.jpg">
+            <!-- create div for links -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()" id="xMark"></i>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <!-- <li><a href="">protofile</a></li> -->
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="price.html">prices</a></li>
+                    <li><a href="team.html">team</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div><!--end nav-links-->
+            <i class="fa-solid fa-bars" onclick="showMenu()" id="Bars"></i>
+        </nav>
+        <!-- add div for txt and button -->
+    </section><!--end section header-->
+
+
+    <!-- section for content map -->
+    <section class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.61185084369!2d31.17606249516498!3d30.059611342983867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1701549342929!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!-- craete section for contact us -->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h4>Qalyubia, Shebin Al-Qanater</h4>
+                        <p>Al-Shoubak</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h4>+201021780939</h4>
+                        <p>From Sunday to Thursday from 9 am to 4 pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h4>info@gmail.com</h4>
+                        <p>E-mail us Your Query</p>
+                </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <div class="form-action">
+                    <form>
+                        <input type="text" placeholder="Enter Your Name" required>
+                        <input type="email" placeholder="Enter Your E-Mail" required>
+                        <input type="text" placeholder="Enter Your Subject" required>
+                        <textarea cols="15" rows="5" placeholder="your message"></textarea>
+                        <button class="btn-contact">Send</button>
+                    </form>
+                   
+                </div>
+            </div><!--end contact-col-->
+        </div><!--end row class-->
+    </section><!--end section contact us-->
+
+<section class="footer">
+       
+        <!-- create row -->
+        <div class="row">
+           
+            <!-- create col -->
+            <div class="col-foot">
+                <img src="./image/logo.jpg">
+                <p class="logo-text">Thank you for vsit our page we appreciate it and waiting you to visit us very soon Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, cupiditate! <i class="fa-regular fa-heart"></i></p>
+            </div><!--end col-foot-->
+            <div class="col-foot">
+               <h3>Office <div class="underline"><span></span></div></h3>
+               <p>New Itpl Road</p>
+               <p>white Field Belgum</p>
+               <p>Los Anglos, Pin 56006,USA </p>
+               <p class="email-id">Cargod@outlook.com</p>
+               <h4>+33 - 012345687</h4>
+            </div><!--end col-foot-->
+            <div class="col-foot">
+                <h3>links <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Feature</a></li>
+                </ul>
+            </div><!--end col-foot-->
+            <div class="col-foot">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter Your E-mail" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div><!--end col-foot-->
+        </div><!--end row-->
+        <hr>
+        <p class="copyright">CAR AGENCY <i class="fa-regular fa-copyright"></i>2023 - All Right Reserved</p>
+       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <script>
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu(){
+            navLinks.style.right = "-4000"
+            Bars.style.display = "block"
+        }
+        function showMenu(){
+            navLinks.style.right = "0"
+            Bars.style.display = "none"
+            
+        }
+
+    </script>
+
+</body>
+</html>
